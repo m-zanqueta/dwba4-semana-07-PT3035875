@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - IFSP</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <main id="page-content">
+        <h1>Mande uma mensagem</h1>
+        <form action="" method="GET">
+            <div class="row">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="row">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="row">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone"
+                       placeholder="(99) 99999-9999"
+                       pattern="\(\d{2}\)\s\d{5}-\d{4}" required>
+            </div>
+            <div class="row">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="critica">Crítica</option>
+                    <option value="elogio">Elogio</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <fieldset>
+                <legend>Opções de Resposta</legend>
+                <label style="width:auto; margin-right:10px;">
+                    <input type="checkbox" name="resposta" value="email"> E-Mail
+                </label>
+                <label style="width:auto;">
+                    <input type="checkbox" name="resposta" value="telefone"> Telefone
+                </label>
+            </fieldset>
+            <button type="submit" class="btn-principal">Enviar</button>
+        </form>
+    </main>
+    <script src="../layout.js"></script>
+</body>
+</html>

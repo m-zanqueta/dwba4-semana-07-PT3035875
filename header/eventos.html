@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - IFSP</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <main id="page-content">
+        <h1>Inscreva-se</h1>
+        <form action="" method="GET">
+            <div class="row">
+                <label for="evento">Evento</label>
+                <select id="evento" name="evento" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="voe">Voe sem asas</option>
+                    <option value="festa">Festa junina</option>
+                    <option value="tech">Semana de tecnologia</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Informações de Acesso</legend>
+                <div class="row">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="row">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="row">
+                    <label for="confirma">Confirme a Senha</label>
+                    <input type="password" id="confirma" name="confirma" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="row">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" size="40" required>
+                </div>
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="row">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular"
+                           placeholder="(99) 99999-9999"
+                           pattern="\(\d{2}\)\s\d{5}-\d{4}" required>
+                </div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="masc" value="M" required>
+                    <label for="masc" style="width:auto; margin-right:10px;">Masculino</label>
+                    <input type="radio" name="sexo" id="fem" value="F">
+                    <label for="fem" style="width:auto;">Feminino</label>
+                </fieldset>
+                <div class="row">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+                <div class="row">
+                    <label for="cor">Cor Favorita</label>
+                    <input type="color" id="cor" name="cor" value="#000000">
+                </div>
+                <div class="row">
+                    <label for="github">Perfil no Github</label>
+                    <input type="url" id="github" name="github" required>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn-principal">Inscrever</button>
+            <button type="reset" class="btn-secundario">Limpar</button>
+        </form>
+    </main>
+    <script src="../layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSP - Câmpus Pirituba</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .noticias-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px 48px;
+            margin: 30px 0;
+        }
+
+        .noticia {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .noticia img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: 0;
+        }
+
+        .noticia-titulo {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .noticia-subtitulo {
+            font-size: 13px;
+            color: #333;
+            margin: 0;
+        }
+
+        .secao-video {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .secao-video h2 {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main id="page-content">
+
+        <div class="noticias-grid">
+
+            <div class="noticia">
+                <img src="img/eleicoes.jpg" alt="Eleições IFSP">
+                <p class="noticia-titulo">Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</p>
+                <p class="noticia-subtitulo">Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+            </div>
+
+            <div class="noticia">
+                <img src="img/snct.jpg" alt="Semana Nacional de Ciência e Tecnologia">
+                <p class="noticia-titulo">IFSP: SNCT reúne atividades entre 19 e 24 de outubro</p>
+                <p class="noticia-subtitulo">Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+            </div>
+
+            <div class="noticia">
+                <img src="img/residencia.png" alt="Residência Pedagógica 2020">
+                <p class="noticia-titulo">IFSP oferece bolsa aos voluntários da Residência Pedagógica</p>
+                <p class="noticia-subtitulo">Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+            </div>
+
+            <div class="noticia">
+                <img src="img/maratona.jpeg" alt="III Maratona InterIF">
+                <p class="noticia-titulo">Inscrições abertas para a III Maratona InterIF</p>
+                <p class="noticia-subtitulo">Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+            </div>
+
+        </div>
+
+        <div class="secao-video">
+            <h2>Conheça os desafios de inovação</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=xDD8mjjDAosRpUt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </main>
+    <script src="layout.js"></script>
+</body>
+</html>
